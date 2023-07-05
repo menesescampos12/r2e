@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./src/styles/bulma.min.css">
+</head>
+<body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="./src/img/logo-coca-cola-1 (1).jpg" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="150" height="250">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      </nav>  
+      <section class="hero is-primary">
+        <div class="hero-body">
+          <p class="title">
+            CRUD
+          </p>
+          <p class="subtitle">
+          formulario
+          </p>     
+        </div>
+      </section>
+      <section>
+        <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>Form Name</legend>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="TareaID">Tarea</label>  
+              <div class="col-md-4">
+              <input id="TareaID" name="TareaID" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="descripcionid">descripcion</label>  
+              <div class="col-md-5">
+              <input id="descripcionid" name="descripcionid" type="text" placeholder="" class="form-control input-md" required="">
+                
+              </div>
+            </div>
+            
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="btnID"></label>
+              <div class="col-md-4">
+                <button id="btnID" name="btnID" class="btn btn-primary" onclick="enviar(event)">Enviar</button>
+              </div>
+            </div>
+            
+            </fieldset>
+            </form>
+      </section>
+      <script src="./src/scripts/main.js"></script>
+</body>
+</html>
